@@ -4,4 +4,7 @@ project(AirLineManagement)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(AirLineManagement
-        Main.cpp)
+        Main.cpp
+        Planes.cpp
+        Planes.h
+)
