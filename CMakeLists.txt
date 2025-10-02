@@ -7,4 +7,8 @@ add_executable(AirLineManagement
         Main.cpp
         Planes.cpp
         Planes.h
+        Flight.cpp
+        Flight.h
+        DataBase.cpp
+        DataBase.h
 )

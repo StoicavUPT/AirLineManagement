@@ -1,13 +1,12 @@
-//
-// Created by vlads on 10/2/2025.
-//
 
 #include "Planes.h"
+
+#include <utility>
 Plane::~Plane()=default;
 Plane::Plane()=default;
 Plane::Plane(int id, std::string name, int capacity, float consumption) {
     setId(id);
-    setName(name);
+    setName(std::move(name));
     setCapacity(capacity);
     setConsumption(consumption);
 }
