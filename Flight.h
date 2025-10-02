@@ -6,31 +6,38 @@
 #define AIRLINEMANAGEMENT_FLIGHT_H
 #include <string>
 
+#include "Airport.h"
+#include "Captain.h"
+#include "Planes.h"
+
 class Flight {
 private:
-    int planeId;
+    Airport airport;
+    Plane plane;
     int flightNum;// id
-    std::string departureAirport;
-    std::string arrivalAirport;
+    Captain captain;
+    Airport departureAirport;
+    Airport arrivalAirport;
     std::string dateOfDeparture;
     std::string dateOfArrival;
 public:
     ~Flight();
     Flight();
-    Flight(int planeId,int flightNum,std::string departureAirport,std::string arrivalAirport,std::string dateOfDeparture,std::string dateOfArrival);
-    void setPlaneId(int id);
-    int getPlaneId();
+    Flight(Captain captain,Plane plane,int flightNum,Airport departureAirport,Airport arrivalAirport,std::string dateOfDeparture,std::string dateOfArrival);
+    void setPlane(Plane plane);
+    Plane getPlane() const;
     void setFlightNum(int num);
-    int getFlightNum();
-    void setDepartureAirport(std::string airport);
-    std::string getDepartureAirport();
-    void setArrivalAirport(std::string airport);
-    std::string getArrivalAirport();
+    int getFlightNum() const;
+    void setDepartureAirport(Airport airport);
+    Airport getDepartureAirport();
+    void setArrivalAirport(Airport airport);
+    Airport getArrivalAirport();
     void setDateOfDeparture(std::string date);
     std::string getDateOfDeparture();
     void setDateOfArrival(std::string date);
     std::string getDateOfArrival();
-
+    Captain getCaptain() const;
+    void setCaptain(Captain captain);
 };
 
 

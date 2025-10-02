@@ -11,4 +11,12 @@ add_executable(AirLineManagement
         Flight.h
         DataBase.cpp
         DataBase.h
+        Airport.cpp
+        Airport.h
+        Reservation.cpp
+        Reservation.h
+        Person.cpp
+        Person.h
+        Captain.cpp
+        Captain.h
 )

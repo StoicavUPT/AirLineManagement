@@ -7,14 +7,21 @@
 #include <vector>
 #include "Flight.h"
 #include "Planes.h"
+#include "Airport.h"
+#include "Reservation.h"
 
 class DataBase {
 private:
     std::vector<Flight> flights;
     std::vector<Plane> planes;
+    std::vector<Airport> airports;
+    std::vector<Reservation> reservations;
+    std::vector<Captain> captains;
 
 
 public:
+    DataBase();
+    ~DataBase();
 };
 
 
