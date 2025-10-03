@@ -1,0 +1,13 @@
+//
+// Created by vlads on 10/3/2025.
+//
+
+#ifndef AIRLINEMANAGEMENT_ADDREMOVE_H
+#define AIRLINEMANAGEMENT_ADDREMOVE_H
+
+
+class AddRemove {
+};
+
+
+#endif //AIRLINEMANAGEMENT_ADDREMOVE_H

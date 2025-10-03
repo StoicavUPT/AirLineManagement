@@ -19,4 +19,6 @@ add_executable(AirLineManagement
         Person.h
         Captain.cpp
         Captain.h
+        AddRemove.cpp
+        AddRemove.h
 )

@@ -12,7 +12,6 @@
 
 class Flight {
 private:
-    Airport airport;
     Plane plane;
     int flightNum;// id
     Captain captain;

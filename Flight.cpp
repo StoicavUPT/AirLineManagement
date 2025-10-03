@@ -9,11 +9,11 @@
 Flight::~Flight()=default;
 Flight::Flight()=default;
 Flight::Flight(Captain captain,Plane plane,int flightNum,Airport departureAirport,Airport arrivalAirport,std::string dateOfDeparture,std::string dateOfArrival) {
-    setCaptain(std::move(captain));
-    setPlane(std::move(plane));
+    setCaptain(captain);
+    setPlane(plane);
     setFlightNum(flightNum);
-    setDepartureAirport(std::move(departureAirport));
-    setArrivalAirport(std::move(arrivalAirport));
+    setDepartureAirport(departureAirport);
+    setArrivalAirport(arrivalAirport);
     setDateOfDeparture(std::move(dateOfDeparture));
     setDateOfArrival(std::move(dateOfArrival));
 }
